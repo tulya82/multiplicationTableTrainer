@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 3px;
+  display: flex;
+  align-item: center;
+  flex-direction: column;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.check {
+  background-color: rgb(64, 64, 170);
+  border: unset;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
