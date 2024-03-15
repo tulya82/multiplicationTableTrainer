@@ -12,14 +12,14 @@ let secondNumber = getRandomInRange();
 template.innerText = `${firstNumber} * ${secondNumber}`;
 
 check.addEventListener("click", () => {
-  const userAnswer = Number(input.value);
+  let userAnswer = Number(input.value);
 
   if (firstNumber * secondNumber === userAnswer) {
     alert("Поздравляем, это верный ответ");
 
-    // let firstNumber = getRandomInRange();
-    // let secondNumber = getRandomInRange();
-    // template.innerText = `${firstNumber} * ${secondNumber}`;
+    let firstNumber = getRandomInRange();
+    let secondNumber = getRandomInRange();
+    template.innerText = `${firstNumber} * ${secondNumber}`;
   } else {
     alert("Извините, ответ неверный, попройте еще раз");
   }
